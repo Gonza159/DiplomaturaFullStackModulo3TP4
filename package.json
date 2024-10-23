@@ -1,0 +1,15 @@
+{
+  "name": "diplomaturafullstackmodulo3tp4",
+  "version": "1.0.0",
+  "description": "TP4 Diplomatura FullStack",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gonzalo Soria",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
