@@ -1,5 +1,5 @@
 import express from 'express'; 
-import { obtenerTodosLosSuperheroes, obtenerSuperheroePorIdController, agregarNuevoSuperheroe, actualizarSuperheroePorId, eliminarSuperheroePorId, buscarSuperheroesPorAtributoController, obtenerSuperheroesMayoresDe30YConFiltrosController } from './controllers/superheroesController.mjs'; 
+import { obtenerTodosLosSuperheroes, obtenerSuperheroePorIdController, agregarNuevoSuperheroe, actualizarSuperheroePorId, eliminarSuperheroePorId, buscarSuperheroesPorAtributoController, obtenerSuperheroesMayoresDe30YConFiltrosController, obtenerSuperheroesMenoresDe30Controller } from './controllers/superheroesController.mjs'; 
 
 const app = express(); 
 
@@ -15,6 +15,7 @@ app.put('/superheroes/:id', actualizarSuperheroePorId);
 app.delete('/superheroes/:id', eliminarSuperheroePorId); 
 app.get('/superheroes/atributo/:atributo/:valor', buscarSuperheroesPorAtributoController); 
 app.get('/superheroes/filtros/avanzados', obtenerSuperheroesMayoresDe30YConFiltrosController);
+app.get('/superheroes/filtros/menores30', obtenerSuperheroesMenoresDe30Controller);
  
 // Levantar el servidor en el puerto 3005 
 app.listen(PORT, () => { 

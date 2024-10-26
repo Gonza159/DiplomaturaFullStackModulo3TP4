@@ -4,7 +4,7 @@
     "nombreSuperheroe": "Spiderman",
     "nombreReal": "Peter Parker",
     "nombreSociedad": "Vigilante",
-    "edad": 30,
+    "edad": 25,
     "planetaOrigen": "Tierra",
     "debilidad": "Radioactiva",
     "poder": [
